@@ -1,0 +1,3 @@
+Reviews is an app designed to allow a user to register and to read and submit reviews.
+
+Bugs

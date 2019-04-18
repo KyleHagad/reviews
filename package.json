@@ -1,0 +1,11 @@
+{
+  "name": "reviews",
+  "version": "1.0.0",
+  "description": "app for reviews",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "xkxh",
+  "license": "ISC"
+}

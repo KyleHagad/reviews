@@ -4,8 +4,15 @@
   "description": "app for reviews",
   "main": "app.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "start": "SET NODE_ENV=production & npx nodemon",
+    "dev": "SET NODE_ENV=development & npx nodemon %NODE_DEBUG_OPTION%"
   },
   "author": "xkxh",
-  "license": "ISC"
+  "license": "ISC",
+  "dependencies": {
+    "express": "^4.16.4",
+    "express-handlebars": "^3.0.2",
+    "firacode": "^1.206.0",
+    "ip": "^1.1.5"
+  }
 }

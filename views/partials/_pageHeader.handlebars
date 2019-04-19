@@ -1,38 +1,39 @@
 <nav>
-  <div class="topnav">
-
-    <div class="flex-container" id="persistentNavLinks">
+  <div class="flex-container">
+    <div class="topnav">
+      
       <li class="nav-item">
         <a class="nav-link" href="/">Home</a>
       </li>
       <li class="nav-item">
         <a href="/about" class="nav-link">Info</a>
       </li>
-    </div>
-
-    <div class="flex-container" id="loginDependantLinks">
-      <ul id="guestLinks">
-        <li class="nav-item">
-          <a href="/reviews" class="nav-link">Public Opinion</a>
-        </li>
-        <li class="nav-item">
-          <a href="/login" class="nav-link">Sign In</a>
-        </li>
-      </ul>
-
-      <ul id="userLinks">
-        <div class="dropdown">
-          <button class="dropbtn">Opinions</button>
-          <div class="dropdown-content">
-            <a href="/reviews/journal">Your Opinions</a>
-            <a href="/reviews">Opinion</a>
-            <a href="/users/profile">Profile</a>
+        
+      {{#if user}}
+        <ul id="userLinks">
+          <div class="dropdown">
+            <button class="dropbtn">Opinions</button>
+            <div class="dropdown-content">
+              <a href="/reviews/journal">Your Opinions</a>
+              <a href="/reviews">Opinion</a>
+              <a href="/users/profile">Profile</a>
+            </div>
           </div>
-        </div>
-        <li class="nav-item">
-          <a href="/logout" class="nav-link">Sign Out</a>
-        </li>
-      </ul>
+          <li class="nav-item">
+            <a href="/logout" class="nav-link">Sign Out</a>
+          </li>
+        </ul>
+      {{else}}
+        <ul id="guestLinks">
+          <li class="nav-item">
+            <a href="/reviews" class="nav-link">Public Opinion</a>
+          </li>
+          <li class="nav-item">
+            <a href="/login" class="nav-link">Sign In</a>
+          </li>
+        </ul>
+      {{/if}}
+
     </div>
   </div>
 </nav>

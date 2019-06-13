@@ -12,6 +12,6 @@ router.get('/', (req, res) => {
 // v== to Info
 router.get('/info', (req, res) => {
   res.render('index/info');
-})
+});
 
 module.exports = router;

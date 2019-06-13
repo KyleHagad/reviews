@@ -1,7 +1,10 @@
+"use strict";
+
 const express = require('express');
 const exphbs = require('express-handlebars');
 const ip = require('ip');
 const path = require('path');
+const mongoose = require('mongoose');
 
 const app = express();
 
